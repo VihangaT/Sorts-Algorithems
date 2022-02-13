@@ -11,7 +11,7 @@ public class BubbleSort {
         int[] numbers = new int[10];
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = rand.nextInt(100);
+            numbers[i] = rand.nextInt(10);
         }
 
         System.out.println("Before:");
@@ -27,7 +27,7 @@ public class BubbleSort {
                     swappedSomthing=true;
                     int temp = numbers[i];
                     numbers[i] = numbers[i + 1];
-                    numbers[i] = temp;
+                    numbers[i+1] = temp;
                 }
             }
         }
